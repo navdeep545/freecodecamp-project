@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'freecodecamp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'freecodecamp_project_db',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres1234',
+        'HOST': 'localhost',  # Or your PostgreSQL server's hostname/IP
+        'PORT': '5432'
     }
 }
 

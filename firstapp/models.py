@@ -12,4 +12,5 @@ class Reservation(models.Model):
 	comments = models.CharField(max_length=1000)
 
 	def __str__(self):
+		return self.title
 		
